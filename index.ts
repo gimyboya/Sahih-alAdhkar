@@ -33,11 +33,11 @@ const TEMPLATE = {
 // =======================================================
 
 // read the file locally
-const XMLFILE = fs.readFileSync('contents/content.xml', 'utf-8');
+const XML_FILE = fs.readFileSync('content/content.xml', 'utf-8');
 // parse the file
-const XMLTOJSON = camaro.default(XMLFILE, TEMPLATE);
+const XML_FILE_TO_JSON = camaro.default(XML_FILE, TEMPLATE);
 
-console.log(XMLTOJSON);
+console.log(XML_FILE_TO_JSON);
 // ========================================================
 // =====================================================| |
 // This script is to retrieve the xml content remotely  | |
@@ -62,7 +62,7 @@ const CLIENT = github.client(process.env.GH_TOKEN);
 // instantiate the github repo
 const GH_REPO = CLIENT.repo('khalid-hussain/Sahih-alAdhkar-XML');
 // the xml file url from the repo
-const URL = 'https://api.github.com/repos/khalid-hussain/Sahih-alAdhkar-XML/contents/content.xml';
+const URL = 'https://api.github.com/repos/khalid-hussain/Sahih-alAdhkar-XML/content/content.xml';
 
 // last update done by the app (UTC epoch seconds)
 // you need to save when did you last updated your file
@@ -74,9 +74,9 @@ GH_REPO.branchAsync('master').then((branch) => {
   if (MASTER_LAST_UPDATE > APP_LAST_UPDATE) {
     // fetching the content
     axios.get(URL).then(async (res) => {
-      const FETCHEDXML = Base64.decode(res.data.content);
-      const XMLTOJSON = camaro.default(FETCHEDXML, TEMPLATE);
-      console.log(XMLTOJSON);
+      const FETCHED_XML = Base64.decode(res.data.content);
+      const XML_TO_JSON = camaro.default(FETCHED_XML, TEMPLATE);
+      console.log(XML_TO_JSON);
     }).catch((e) => {
       throw new Error(e.message);
     });
