@@ -1,14 +1,14 @@
 {
-  "name": "sahih-al-adhkar-json",
+  "name": "sahih-al-adhkar-xml",
   "version": "0.0.0-development",
-  "description": "api for sahih al adhkar content",
+  "description": "A repo for sahih-al-adhkar content",
   "keywords": [],
-  "homepage": "http://fasila.io/",
+  "homepage": "http://fasila.faith/",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/luxtagofficial/Typescript-Catapult"
+    "url": "https://github.com/gimyboya/Sahih-alAdhkar-XML.git"
   },
-  "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "commit": "git-cz",
@@ -24,15 +24,15 @@
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
   },
-  "author": "gimyboya <amine@luxtag.io>",
+  "author": "gimyboya <amine@grainer.io>",
   "contributors": [
     {
-      "name": "gimyboya",
-      "email": "amine@luxtag.io"
+      "name": "Khalid Hussain",
+      "email": "khalid@grainer.io"
     },
     {
-      "name": "aiz",
-      "email": "aiz@luxtag.io"
+      "name": "gimyboya",
+      "email": "amine@grainer.io"
     }
   ],
   "license": "LICENSE",
