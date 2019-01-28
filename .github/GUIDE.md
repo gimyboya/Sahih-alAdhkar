@@ -16,9 +16,9 @@ Hi! We are really excited that you are interested in contributing. Before submit
 
 - The `master` branch is basically just a snapshot of the latest stable release. All development should be done in dedicated branches. **Do not submit PRs against the `master` branch.**
 
-- First checkout to the `develop` branch, and start a new branch `feature/YOUR_FEATUR` once done merge back against `develop`.
+- First checkout to the `develop` branch, and start a new branch `feature/YOUR_FEATURE` once done merge back against `develop`.
 
-- Work in the `src` folder and **DO NOT** checkin `dist` in the commits.
+- Work in the `src` folder and **DO NOT** checking `dist` in the commits.
 
 - It's OK to have multiple small commits as you work on the PR - we will let GitHub automatically squash it before merging.
 
@@ -26,7 +26,7 @@ Hi! We are really excited that you are interested in contributing. Before submit
 
 - If adding new feature:
   - Add accompanying test case.
-  - Provide convincing reason to add this feature. Ideally you should open a suggestion issue first and have it greenlighted before working on it.
+  - Provide convincing reason to add this feature. Ideally you should open a suggestion issue first and have it green-lighted before working on it.
 
 - If fixing a bug:
   - If you are resolving a special issue, add `(fix #xxxx[,#xxx])` (#xxxx is the issue id) in your PR title for a better release log, e.g. `update entities encoding/decoding (fix #3899)`.
@@ -56,7 +56,7 @@ $ npm run commit
 # run a lint check against the code
 $ npm run lint
 
-# build the projects and genrate a new dist folder
+# build the projects and generate a new dist folder
 $ npm run build
 
 # run the full test suite, with code coverage report
@@ -68,6 +68,3 @@ npm run validate
 
 **Please make sure to have this pass successfully before submitting a PR.**
 
-## Credits
-
-Thank you to all the people who have already contributed to Apostille-libray!
